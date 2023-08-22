@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "yarn install && yarn run build-assets",
+    "build-assets": "npm run compile && npm run bundle"
   },
   "keywords": [],
   "author": "",
